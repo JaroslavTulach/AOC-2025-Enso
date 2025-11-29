@@ -8,13 +8,22 @@ solving its tasks for  in [Enso](http://enso.org) low/no code environment.
 ## Fork Your Own Copy
 
 First of all fork [this repository](https://github.com/JaroslavTulach/AOC-2025-Enso.git)
-to your github account. 
+to your own github account. 
+
+<img width="1215" height="317" alt="fork" src="https://github.com/user-attachments/assets/d600ec36-89d5-4f6f-b262-8c015f243be1" />
+
+Then you'll get your own repository URL:
+
+<img width="920" height="583" alt="url" src="https://github.com/user-attachments/assets/7f0985cc-daa1-4e9e-8869-fa375e5a3d2e" />
+
+
 
 ## Setup & Execution
 
-Get this repository to your local computer. Use `git` to clone it:
+Get this repository to your local computer. Use `git` to clone it using
+the URL obtained in previous step. I can clone mine with:
 ```bash
-$ git checkout https://github.com/JaroslavTulach/AOC-2025-Enso.git
+$ git checkout https://github.com/JaroslavTulach/AOC-2025-Enso.git 
 $ cd AOC-2025-Enso
 $ ls -1
 Dec00
