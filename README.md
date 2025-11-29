@@ -37,4 +37,17 @@ and **rename it** for example to `Dec01` for the first task of the [AoC 2025](ht
 ## Continuous Integration Check
 
 The github repository contains [automatic CI check](./.github/workflows/enso.yml)
-to verify your changes to the repository are correct. 
+to verify your changes to the repository are correct. There is **Actions** tab
+in the repository:
+
+<img width="723" height="376" alt="GitHub Actions" src="https://github.com/user-attachments/assets/61f2b177-2491-4717-811f-8290a9693283" />
+
+it contains list of all _workflow runs_. As soon as a change is integrated (via `git push`)
+to your GitHub repository a check for all projects prefixed `Dec` in the repository
+is triggered to **verify correctness of your code**.
+
+<img width="1241" height="437" alt="CI Runs" src="https://github.com/user-attachments/assets/a4be8c3d-ffca-4d6d-8476-6f6bb7e396f3" />
+
+If a _workflow run_ is **green** then your code changes are sane. Use this
+_continuous integration_ check to never break code that you have written in the
+past!
