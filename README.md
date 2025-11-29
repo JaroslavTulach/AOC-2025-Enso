@@ -2,8 +2,8 @@
 
 [![CI](https://github.com/JaroslavTulach/AOC-2025-Enso/actions/workflows/enso.yml/badge.svg)](https://github.com/JaroslavTulach/AOC-2025-Enso/actions/workflows/enso.yml)
 
-Get ready for [AoC 2025](https://adventofcode.com/2025) by
-solving its tasks for  in [Enso](http://enso.org).
+Get ready for [Advent of Code 2025](https://adventofcode.com/2025) by
+solving its tasks for  in [Enso](http://enso.org) low/no code environment.
 
 ## Fork Your Own Copy
 
