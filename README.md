@@ -16,8 +16,6 @@ Then you'll get your own repository URL:
 
 <img width="920" height="583" alt="url" src="https://github.com/user-attachments/assets/7f0985cc-daa1-4e9e-8869-fa375e5a3d2e" />
 
-
-
 ## Setup & Execution
 
 Get this repository to your local computer. Use `git` to clone it using
@@ -42,6 +40,10 @@ it is **suggested to duplicate** the project...
 <img width="918" height="639" alt="Duplicate & Rename" src="https://github.com/user-attachments/assets/7aa72b7b-52e2-4f96-a6bf-a852d5719062" />
 
 and **rename it** for example to `Dec01` for the first task of the [AoC 2025](https://adventofcode.com/2025).
+
+## The Structure of the Project
+
+
 
 ## Continuous Integration Check
 
