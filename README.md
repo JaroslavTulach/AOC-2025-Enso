@@ -32,7 +32,7 @@ it is **suggested to duplicate** the project...
 
 <img width="918" height="639" alt="Duplicate & Rename" src="https://github.com/user-attachments/assets/7aa72b7b-52e2-4f96-a6bf-a852d5719062" />
 
-for example to `Dec01` for the first task of the [AoC 2025](https://adventofcode.com/2025).
+and **rename it** for example to `Dec01` for the first task of the [AoC 2025](https://adventofcode.com/2025).
 
 ## Continuous Integration Check
 
