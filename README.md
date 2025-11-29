@@ -23,6 +23,8 @@ README.md
 Let's download [Enso](http://enso.org) now. Enso can run on Linux, Windows, MacOSX. 
 The following is tested on [2025.2.4](https://github.com/enso-org/enso/releases/tag/2025.2.4) version.
 
+Add the `AOC-2025-Enso` folder into your IDE:
+
 ## Continuous Integration Check
 
 The github repository contains [automatic CI check](./.github/workflows/enso.yml)
