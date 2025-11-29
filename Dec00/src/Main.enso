@@ -1,0 +1,17 @@
+from Standard.Base import all
+from Standard.Table import all
+from Standard.Database import all
+import Standard.Visualization
+from Standard.Base.Meta import Enso_Project
+
+main =
+    file1 = Enso_Project.enso_project.data/"input.txt"
+    data = Data.read file1 ..Delimited
+    any1 = data.parse ['Column 1'] type=..Integer
+    result1 = any1.compute ..Sum
+    Runtime.assert (result1 == 13) "Expecting this result"
+
+
+#### METADATA ####
+[[{"index":{"value":189},"size":{"value":42}},"f4343471-d286-4497-83f2-efd1eb500616"],[{"index":{"value":243},"size":{"value":27}},"3f0c84d6-0bed-4252-8856-933b0ca8e83f"],[{"index":{"value":282},"size":{"value":38}},"030dbbf4-36f6-41d5-b2e7-5e5ba7873f17"],[{"index":{"value":332},"size":{"value":18}},"37f688aa-eccc-41e6-95b7-5a432b805d4f"]]
+{"ide":{"node":{"f4343471-d286-4497-83f2-efd1eb500616":{"position":{"vector":[-16,16]}},"3f0c84d6-0bed-4252-8856-933b0ca8e83f":{"position":{"vector":[-16,-56]}},"030dbbf4-36f6-41d5-b2e7-5e5ba7873f17":{"position":{"vector":[-16,-137]}},"37f688aa-eccc-41e6-95b7-5a432b805d4f":{"position":{"vector":[-16,-218]},"visualization":{"show":true}}},"widget":{},"import":{},"snapshot":"eJx9jz0LAjEMhvf+iuLiFtH9Fj8GB0FQXEQkZ3MS6Re9HKi/3vY4BR3s1DTv8yRtUnB6J+gNJgNzbEmziyGJRmtV89XdY23/tJcoWP8Ihusnc+C2Q8tPFA7+hy/DYUOCb8HKt+G8TeFGF1HKIXtdKZ1Pw5amuvoKAJUiDoXJu0xG7GMnIHcZ9Vh5zFTZExKhGTwAS7LsWMj0MfSPIi9piJjyh47jRbCd83o6Pml5RKoA1l7oSulNzDJRQLgEl4dStu46p15Nc3dK"}}
