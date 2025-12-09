@@ -1,0 +1,23 @@
+from Standard.Base import all
+from Standard.Table import all
+from Standard.Database import all
+import Standard.Visualization
+from Standard.Base.Meta import Enso_Project
+
+main =
+    file1 = Enso_Project.enso_project.data/"input.txt"
+    data = Data.read file1 ..Delimited
+    any1 = data.parse ['Column 1', 'Column 2'] type=..Integer
+    result1 = any1.compute ..Sum
+    any2 = any1.rename_columns [(Pair.Value 'Column 1' 'x'), (Pair.Value 'Column 2' 'y')]
+    any3 = any2.cross_join any2
+    any4 = any3.set (expr 'abs([x]-[Right x])+1') as="dx"
+    any5 = any4.set (expr 'abs([y]-[Right y])+1') "dy"
+    any6 = any5.set (expr '[dx]*[dy]') "sq"
+    any7 = any6.sort [(..Name 'sq' ..Descending)]
+    Runtime.assert (result1 == 13) "Expecting this result"
+
+
+#### METADATA ####
+[[{"index":{"value":189},"size":{"value":42}},"f4343471-d286-4497-83f2-efd1eb500616"],[{"index":{"value":243},"size":{"value":27}},"3f0c84d6-0bed-4252-8856-933b0ca8e83f"],[{"index":{"value":282},"size":{"value":50}},"030dbbf4-36f6-41d5-b2e7-5e5ba7873f17"],[{"index":{"value":347},"size":{"value":18}},"37f688aa-eccc-41e6-95b7-5a432b805d4f"],[{"index":{"value":377},"size":{"value":19}},"1106016c-ef11-4764-8988-c6dc1bc7bcc8"],[{"index":{"value":377},"size":{"value":78}},"d0694084-72b8-4a81-a78d-50fe9b6d2008"],[{"index":{"value":467},"size":{"value":15}},"dfbc2365-893b-4eaf-888e-d1b0a6eb2f28"],[{"index":{"value":467},"size":{"value":20}},"463b8238-5ed9-4c14-b8f6-eb2d071f5476"],[{"index":{"value":499},"size":{"value":8}},"8dc9c389-d923-4141-8a91-d3d9c92dd0be"],[{"index":{"value":499},"size":{"value":38}},"d3fd9d9a-e7ec-49f1-a25b-d14822bdf624"],[{"index":{"value":499},"size":{"value":46}},"87e680d5-ed44-4916-8daf-f2a51ae03b35"],[{"index":{"value":557},"size":{"value":8}},"8cd085bb-5c06-4a46-a2b3-bbffcbdde54c"],[{"index":{"value":557},"size":{"value":38}},"d7a8675b-ebfe-4c1b-8cf5-c7d6a7ec2f70"],[{"index":{"value":557},"size":{"value":43}},"f280c3c0-fc53-46be-8d55-1851a9ad1f92"],[{"index":{"value":612},"size":{"value":8}},"87aac90e-b58a-4d68-a6ff-a67e72e054b6"],[{"index":{"value":612},"size":{"value":27}},"0dbcd2b5-0aff-405b-8eef-f6c20d26c07b"],[{"index":{"value":612},"size":{"value":32}},"c11369ad-8903-425e-99cb-1f478b6e6a50"],[{"index":{"value":656},"size":{"value":9}},"898f32c9-390c-4278-9b6a-a51ef136d0fe"],[{"index":{"value":656},"size":{"value":38}},"3182a17a-b22c-4127-bd83-1091372a985c"],[{"index":{"value":699},"size":{"value":54}},"7eb36000-ccff-41df-bc24-7ad29961de5b"]]
+{"ide":{"node":{"f4343471-d286-4497-83f2-efd1eb500616":{"position":{"vector":[-16,16]}},"3f0c84d6-0bed-4252-8856-933b0ca8e83f":{"position":{"vector":[-16,-56]}},"030dbbf4-36f6-41d5-b2e7-5e5ba7873f17":{"position":{"vector":[-16,-137]}},"37f688aa-eccc-41e6-95b7-5a432b805d4f":{"position":{"vector":[-261,-218]},"visualization":{"show":true}},"d0694084-72b8-4a81-a78d-50fe9b6d2008":{"position":{"vector":[107,-212]}},"1106016c-ef11-4764-8988-c6dc1bc7bcc8":{"position":{"vector":[107,-212]}},"463b8238-5ed9-4c14-b8f6-eb2d071f5476":{"position":{"vector":[107,-284]},"visualization":{"show":false,"width":649.859375,"height":429}},"dfbc2365-893b-4eaf-888e-d1b0a6eb2f28":{"position":{"vector":[107,-284]}},"87e680d5-ed44-4916-8daf-f2a51ae03b35":{"position":{"vector":[107,-356]},"visualization":{"show":false,"width":765.90625,"height":525}},"d3fd9d9a-e7ec-49f1-a25b-d14822bdf624":{"position":{"vector":[107,-356]}},"8dc9c389-d923-4141-8a91-d3d9c92dd0be":{"position":{"vector":[107,-356]}},"f280c3c0-fc53-46be-8d55-1851a9ad1f92":{"position":{"vector":[161,-463]}},"d7a8675b-ebfe-4c1b-8cf5-c7d6a7ec2f70":{"position":{"vector":[161,-463]}},"8cd085bb-5c06-4a46-a2b3-bbffcbdde54c":{"position":{"vector":[161,-463]}},"c11369ad-8903-425e-99cb-1f478b6e6a50":{"position":{"vector":[220,-610]}},"0dbcd2b5-0aff-405b-8eef-f6c20d26c07b":{"position":{"vector":[220,-610]}},"87aac90e-b58a-4d68-a6ff-a67e72e054b6":{"position":{"vector":[220,-610]}},"3182a17a-b22c-4127-bd83-1091372a985c":{"position":{"vector":[287,-739]},"visualization":{"show":true,"width":979.484375,"height":576}},"898f32c9-390c-4278-9b6a-a51ef136d0fe":{"position":{"vector":[287,-739]}},"7eb36000-ccff-41df-bc24-7ad29961de5b":{"position":{"vector":[-16,-440]}}},"widget":{},"import":{},"snapshot":"eJx9kk1P3DAQhu/7K0a5ONtSo90FesqlhQMHEIKKSxStZuPZxcgfwXakpL++dr5aaNWcPH7f5x3bk6OzGp4CGoFO8G/oCaRurAuASq2O79QfeFD/ka8x4OFDwLRcPM/St6jkTwzSmg98as7vKOAccGO83T84+0p1WK00SgPFCuJ3lIo2ULwzcEpFMxUinuU8k6ZpAw9dyAYsbUYqnZM7QjHlcH5NSmoZSAw2NH0KT27eoIsXKtl3q1ptYMPOYF5vWQWhb6jg/NYEOpEbaEe+VSEFpBxeWx3PQLHJU6vn+O2sOjKoaV8PiR7K/AGl48+oWoLfPYF1bH0G/xK3UezZupqTd2PyltfOer9/tfHNUj3rF6O+454C5NQ1DhgefF521ZfyUZ5eAnTV+vOGrQF9kYkum8nLkbz4i+wXsp/ITPQLdjVil39ipeiqT6Xoq+T1b4v36+i94j5Nv8w5v4+vA8y/sWFIviYjpDlN131sTZCaOHpP0Z8vL1/AZheTb7om/grRD+FF+mkw2S/IvPDN"}}
